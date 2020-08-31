@@ -6,5 +6,5 @@
 
 * Use D3 to create a scatterplot issustrating the relationship in each state.
 
-![Scatterplot](https://github.com/michaellegg16/D3-Challenge/blob/master/Screenshots/D3Dashboard.PNG)
+![Scatterplot](https://github.com/michaellegg16/D3-Challenge/blob/master/Screenshots/D3Dashboard_.PNG)
 
