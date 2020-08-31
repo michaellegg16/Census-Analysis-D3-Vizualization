@@ -68,7 +68,21 @@ d3.csv("assets/js/stateData.csv").then(function(stateData) {
     .attr("cy", d => yLinearScale(d.income))
     .attr("r", "15")
     .attr("fill", "pink")
-    .attr("opacity", ".5");
+    .attr("opacity", ".5")
+    .text(d => d.abbr)
+    .style("font-size", "11px");
+
+    // Label Circles
+    var circleLabels = chartGroup.selectAll()
+      .data(stateData)
+      .enter()
+      .append("text")
+      .attr("x", d => xLinearScale(d.smokes))
+      .attr("y", d => yLinearScale(d.income))
+      .style("font-size", "11px")
+      .style("text-anchor", "middle")
+      .style("fill", "black")
+      .text(d => d.abbr);
 
     // Step 6: Initialize tool tip
     // ==============================
